@@ -1,0 +1,60 @@
+{
+  "manifest_version": 2,
+  "name": "Kawaii SWAP",
+  "description": "Chrome Extension that lets you post something cute instead of hate!",
+  "version": "0.0.11",
+  "options_page": "newtab.html?page=settings",
+
+  "permissions": [
+    "clipboardWrite",
+    "clipboardRead",
+    "tabs",
+    "contextMenus",
+    "storage",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "browser_action": {
+    "default_icon": "img/icon.png"
+  },
+
+  "icons": { "16": "img/icon_small.png",
+             "48": "img/icon.png",
+             "128": "img/icon_large.png" },
+
+  "background": {
+  	"scripts": [
+	    "js/lib/jquery-1.10.1.min.js",
+	    "js/lib/bootstrap.js",
+	    "js/lib/async.js",
+	    "js/lib/codebird.js",
+	    "js/common.js",
+	    "js/store.js",
+	    "js/menu.js",
+	    "js/background.js",
+	    "js/newtab.js"
+  	],
+    "persistent": false
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "all_frames": true,
+      "run_at": "document_idle", 
+      "js": [
+      	"js/lib/jquery-1.10.1.min.js",
+	    "js/lib/async.js",
+      	"js/common.js", 
+      	"js/ngwords.js",
+      	"js/contentscript.js",
+      	"js/jquery.easing.1.3.js"
+  	  ],
+      "css": [
+      	"css/contentscript.css"
+  	  ]
+    }
+  ],
+  
+  "web_accessible_resources": ["newtab.html","img/logo.svg","img/refresh.svg","img/closex.svg","css/fonts/*"]
+}

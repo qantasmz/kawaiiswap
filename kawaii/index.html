@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=800, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Kawaii Swap</title>
+    <meta name="title" content="Kawaii Swap">
+    <meta name="description" content="Chrome Extension that lets you post something cute instead of hate!">
+    <meta name="keywords" content="Kawaii Swap, PARTY New York, chrome extention, twitter, cute, hate">
+    <meta property="og:title" content="Kawaii Swap">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="http://kawaiiswap.com/images/ogimage2.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="http://kawaiiswap.com">
+    <meta property="og:site_name" content="Kawaii Swap">
+    <meta property="og:description" content="Chrome Extension that lets you post something cute instead of hate!">
+    <meta property="og:locale" content="en_US">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:site" content="@prty_ny">
+    <meta property="twitter:creator" content="@prty_ny">
+    <meta property="twitter:title" content="Kawaii Swapr">
+    <meta property="twitter:description" content="Chrome Extension that lets you post something cute instead of hate!">
+    <meta property="twitter:image" content="http://kawaiiswap.com/images/ogimage2.jpg">
+    <meta property="twitter:url" content="http://http://kawaiiswap.com">
+    <link href="/favicon.ico" rel="icon">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico?v=2">
+
+
+    <link href="css/app.css" rel="stylesheet" type="text/css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/userAgentChecker.min.js"></script>
+	<script src="js/app.js"></script>
+
+
+</head>
+
+<body>
+
+<div class="loader">Loading...</div>
+
+
+<div id="core">
+<svg id="bgcircle" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200">
+
+<path id="circle" fill="#FFFFFF" transform="matrix(1.0,0.0,-0.0,1.0,100,100)" d="M100,0c0,50-50,100-100,100c-50,0-100-50-100-100c0-50,50-100,100-100C50-100,100-50,100,0z"/>
+
+</svg>
+
+
+<img src="img/logo.svg" id="logo">
+
+
+<div id="btn1">
+
+<svg id="btcircle-sh-frame" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100">
+
+<path id="btcircle-sh" fill="#F1B4CD" transform="matrix(1.0,0.0,-0.0,1.0,50,50)" d="M50,0c0,25-25,50-50,50c-25,0-50-25-50-50c0-25,25-50,50-50C25-50,50-25,50,0z"/>
+
+</svg>
+
+<svg id="btcircle-frame" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100">
+
+<path id="btcircle" fill="#F85693" transform="matrix(1.0,0.0,-0.0,1.0,50,50)" d="M50,0c0,25-25,50-50,50c-25,0-50-25-50-50c0-25,25-50,50-50C25-50,50-25,50,0z"/>
+
+</svg>
+
+
+<div id="lightline">
+<svg id="btcircle-line-frame" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100">
+
+<path id="btcircle-line" fill="none" stroke="white" stroke-width="2" transform="matrix(1.0,0.0,-0.0,1.0,50,50)" d="M50,0c0,25-25,50-50,50c-25,0-50-25-50-50c0-25,25-50,50-50C25-50,50-25,50,0z"/>
+
+</svg>
+</div>
+<div id="btcopy">
+INSTALL<br />
+NOW!
+</div>
+
+</div>
+
+<div id="overlay">
+
+<img src="img/wave.svg" id="wave1">
+
+<div id="copy1">
+Chrome Extension that lets you post<br />
+something cute instead of hate!
+</div>
+
+
+
+
+<img src="img/arrow.svg" id="arrow">
+
+
+<div id="howitworks">
+
+<div id="read1" class="read">
+HOW IT WORKS
+</div>
+
+<div id="diagram1" class="diagram">
+	<img src="img/diagram1.png" id="diagramimg1" />
+	<div class="caption">
+	Download the Chrome Extension and login to your Twitter account.
+	</div>
+</div>
+<div id="diagram2" class="diagram">
+	<img src="img/diagram2.png" id="diagramimg2" />
+	<div class="caption">
+	When you type something negative, we'll suggest kawaii gifs as an alternative. Shuffle until you find the one you like.
+	</div>
+</div>
+<div id="diagram3" class="diagram">
+	<img src="img/diagram3.png" id="diagramimg3" />
+	<div class="caption">
+	Swap your negative vibes and post your kawaii gif instead for more positivity!
+	</div>
+</div>
+
+<img src="img/wave.svg" id="wave2">
+</div>
+
+<div id="creator">
+
+<div id="read2" class="read">
+ABOUT THE CREATOR
+</div>
+
+<img src="img/wave.svg" id="wave3">
+<img src="img/partylogo.png" id="partylogo">
+	<div id="description">
+	PARTY is a creative lab with offices in New York & Tokyo. We are a group of designers & engineers, experimenting with storytelling & technology to create unexpected and wonderful experiences. While we often use our expertise to create digital content for our big brand partners promoting their various products, we challenged ourselves with this project to create a product of our own. We love to party, we love technology, and we love kids, so this felt like a natural step for us.
+	<p id="partyurl"><a href="http://prty.nyc" target="_blank">WWW.PRTY.NYC</a></p>
+	</div>
+
+	<div id="newsletter">
+		<div id="newsletter-bg"></div>
+		<div id="newsletter-txt">SIGN UP TO OUR NEWSLETTER!</div>
+		<div id="newsletter-form">
+			<form action="//nyc.us11.list-manage.com/subscribe/post?u=32de671fc58ee5885ad2191ff&amp;id=57c374908c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+
+                	<div id="mc_embed_signup_scroll">
+                		<input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="Email address" required><input type="submit" value="SIGN UP" name="subscribe" id="mc-embedded-subscribe" class="btn btn-default">
+                		<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_32de671fc58ee5885ad2191ff_57c374908c" tabindex="-1" value=""></div>
+
+			</form>
+		</div>
+	</div>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+<div id="scroll-target">
+	<div id="scroll-target-inner">
+	</div>
+
+</div>
+
+<div id="footer">
+	<a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fkawaiiswap.com" target="_blank"><img src="img/facebook.svg" id="facebook"></a>
+	<a href="https://twitter.com/intent/tweet?text=Chrome%20Extension%20that%20lets%20you%20post%20something%20cute%20instead%20of%20hate!%20http%3A%2F%2Fkawaiiswap.com&amp;hashtags=KawaiiSwap" target="_blank"><img src="img/twitter.svg" id="twitter"></a>
+	<div id="copyright">2017(c) PARTY New York All rights reserved.</div>
+</div>
+
+<div id="carousel">
+	<img src="img/carouselbase.svg" id="cbase">
+	<svg width="50" height="50"
+		xmlns="http://www.w3.org/2000/svg"
+		xmlns:xlink="http://www.w3.org/1999/xlink" id="c1-frame">
+		<circle cx="25" cy="25" r="25" stroke="none" fill="white" stroke-width="0" id="c1-bt"/>
+	</svg>
+	<svg width="50" height="50"
+		xmlns="http://www.w3.org/2000/svg"
+		xmlns:xlink="http://www.w3.org/1999/xlink" id="c2-frame">
+		<circle cx="25" cy="25" r="25" stroke="none" fill="white" stroke-width="0" id="c2-bt"/>
+	</svg>
+	<svg width="50" height="50"
+		xmlns="http://www.w3.org/2000/svg"
+		xmlns:xlink="http://www.w3.org/1999/xlink" id="c3-frame">
+		<circle cx="25" cy="25" r="25" stroke="none" fill="white" stroke-width="0" id="c3-bt"/>
+	</svg>
+</div>
+
+</div>
+
+</body>
+
+</html>
